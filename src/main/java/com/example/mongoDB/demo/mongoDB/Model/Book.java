@@ -1,9 +1,14 @@
-package com.example.mongoDB.demo.mongoDB.DAO;
+package com.example.mongoDB.demo.mongoDB.Model;
 
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Book {
+    @Id
+    private ObjectId _id;
+
     private String name;
     private String authorName;
     private int cost;

@@ -1,6 +1,6 @@
-package com.example.mongoDB.demo.mongoDB.CreateRequest;
+package com.example.mongoDB.demo.mongoDB.DTO;
 
-public class CreateRequest {
+public class BookDTO {
     private String name;
 
     public String getName() {
